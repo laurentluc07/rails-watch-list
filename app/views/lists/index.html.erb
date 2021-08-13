@@ -7,7 +7,7 @@
       <% if @lists.present? %>
         <% @lists.each do |list| %>
           <%= link_to list_path(list) do  %>
-            <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <div class="list-card" style="">
               <%= list.name.upcase %>
             </div>
           <% end %>
