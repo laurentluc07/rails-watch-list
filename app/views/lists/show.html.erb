@@ -1,6 +1,6 @@
 <div>
   <div class="list-banner" style="background-image: url('https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
-    <h2><%= @list.name %>(<%= @list.bookmarks.count %> films)</h2>
+    <h2><%= @list.name.upcase %>(<%= @list.bookmarks.count %> films)</h2>
     <%= link_to "Ajouter un film",  new_list_bookmark_path(@list), class: "btn btn-success"  %>
   </div>
   <div class="bookmarks-grid container">
