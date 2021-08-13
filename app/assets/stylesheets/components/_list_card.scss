@@ -1,7 +1,7 @@
 .lists-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-gap: 40px;
+  grid-gap: 20px;
 }
 
 .list-card {
@@ -21,12 +21,12 @@
     -1px 1px 0 #000,
      1px 1px 0 #000,
      1px 1px 10px #141414;
-  // & .button-delete {
-  //   position: relative;
-  //   left: 76px;
-  //   bottom: 34px;
-  //   font-size: 16px;
-  // }
+  & .button-delete {
+    position: relative;
+    left: 76px;
+    bottom: 34px;
+    font-size: 16px;
+  }
   &:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
