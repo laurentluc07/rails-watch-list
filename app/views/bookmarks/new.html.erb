@@ -6,7 +6,7 @@
         <%= simple_form_for [@list, @bookmark] do |f| %>
           <%= f.input :comment, placeholder: 'Entrer un commentaire par rapport au film' %>
           <%= f.association :movie, prompt: 'Selectionner un film', input_html: { class: 'select2' } %>
-          <%= f.submit class: 'btn btn-warning' %>
+          <%= f.submit class: 'btn btn-primary' %>
         <% end %>
       </div>
     </div>
