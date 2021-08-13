@@ -1,0 +1,25 @@
+<div class="card-movies">
+  <h1> My Watch List </h1>
+  <div class="card mt-3">
+    <h2>Movies</h2>
+    <ol>
+      <div class="card-grid">
+        <% @movies.each do |movie| %>
+          <div class="card-description">
+            <li>
+            <%=  link_to movie.title, movie_path(movie) %>
+            </li>
+            <p><%= movie.overview %></p>
+            <img class="img-movies" src="<%= movie.poster_url %>" alt="">
+            <p><%= movie.rating %></p>
+              <%= link_to "🗑️ ",
+                movie_path(movie),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %></li>
+          </div>
+        <% end %>
+      </div>
+
+    </ol>
+  </div>
+</div>

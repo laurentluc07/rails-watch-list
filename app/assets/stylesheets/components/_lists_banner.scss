@@ -1,0 +1,22 @@
+.lists-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  background-image: url('https://images.pexels.com/photos/7234227/pexels-photo-7234227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+
+  & h2 {
+    text-shadow:   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px 1px 10px #141414;
+     color:#fff;
+    font-size: 56px;
+    font-weight: 700;
+  }
+}

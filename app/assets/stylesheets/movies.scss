@@ -1,3 +1,22 @@
 // Place all the styles related to the Movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.img {
+  height: 200px;
+}
+.img-movies {
+  height: 300px;
+  border-radius: 5px;
+}
+.card-descriptions {
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  height: 20px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}

@@ -1,0 +1,8 @@
+<div class = "container mt-5">
+<p>Title : <%= @movie.title %></p>
+<p>Overview : <%= @movie.overview %></p>
+<img class="img" src="<%= @movie.poster_url %>" alt="">
+<p>Rating : <%= @movie.rating %></p>
+<button class = "btn btn-danger"><%= link_to "Movies Lists", movies_path %></button>
+<button><%= link_to "New Movie", new_movie_path %></button>
+</div>

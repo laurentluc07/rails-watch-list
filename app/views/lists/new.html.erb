@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h1 class="my-3">Créer un nouvelle list:</h1>
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <div class="my-2">
+      <%= f.submit 'Submit', class: ' btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
