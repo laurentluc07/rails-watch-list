@@ -1,11 +1,10 @@
 .lists-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-gap: 40px;
 }
 
 .list-card {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   color: white;
   background-size: cover;
   background-position: center;
@@ -22,7 +21,12 @@
     -1px 1px 0 #000,
      1px 1px 0 #000,
      1px 1px 10px #141414;
-
+  // & .button-delete {
+  //   position: relative;
+  //   left: 76px;
+  //   bottom: 34px;
+  //   font-size: 16px;
+  // }
   &:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

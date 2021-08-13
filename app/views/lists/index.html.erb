@@ -7,10 +7,11 @@
       <% if @lists.present? %>
         <% @lists.each do |list| %>
           <%= link_to list_path(list) do  %>
-            <div class="list-card" style="">
+            <div class="list-card" style="background-image: url('<%= cl_image_path list.photo.key %>')">
               <%= list.name.upcase %>
             </div>
           <% end %>
+          <%# <%= link_to "X", list_path(list), method: :delete, class: "button-delete" %>
         <% end %>
       <% else %>
         <p>C'est le moment de se créer une liste !!</p>
